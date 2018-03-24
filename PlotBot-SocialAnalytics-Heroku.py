@@ -9,6 +9,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import os
 
 #Import and Initialize Sentiment Analyzer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
