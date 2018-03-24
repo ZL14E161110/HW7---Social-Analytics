@@ -1,8 +1,3 @@
-# HW7---Social-Analytics
-
-
-
-```python
 # Dependencies
 import tweepy
 import json
@@ -10,6 +5,7 @@ import numpy as np
 import pandas as pd
 import time
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
 
 # Twitter API Keys
@@ -26,10 +22,8 @@ myacct = "@nanameowbanana"
 auth = tweepy.OAuthHandler(api_key, api_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
-```
 
 
-```python
 # Create a function to find people mention about my twitter and another person's twitter in a format "@myaccount: @targetaccount"
 # and grab 500 compound sentiments from every tweet
 # and create the plot and tweet it back
@@ -105,29 +99,8 @@ def tweetsentimentanalysis():
     print(f"last tweet id is {max(lastid)}")
     print(f"we split out {counter} times analysis this time")
 
-```
-
-
-```python
 # Set timer to run every 5 minute
 while(True):
     tweetsentimentanalysis()
+    print(f"total count is {Total_Count}")
     time.sleep(300)
-    
-```
-
-
-![png](output_2_0.png)
-
-
-
-![png](output_2_1.png)
-
-
-
-![png](output_2_2.png)
-
-
-    last tweet id is 977485662126403586
-    we split out 3 times analysis this time
-    
