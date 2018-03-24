@@ -1,1 +1,1 @@
-worker: python PlotBot-SocialAnalytics.py
+worker: python PlotBot-SocialAnalytics-Heroku.py
