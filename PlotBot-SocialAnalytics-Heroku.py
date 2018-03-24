@@ -8,18 +8,21 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-# Twitter API Keys
-from TweetbotmeowAPI import api_key, api_secret, access_token, access_token_secret
-
 #Import and Initialize Sentiment Analyzer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
+
+# Twitter API Keys
+consumer_key = os.environ['api_key']
+consumer_secret = os.environ['api_secret']
+access_token = os.environ['access_token']
+access_token_secret = os.environ['access_token_secret']
 
 #  Specify your twitter account (hint: remember the "@" sign)
 myacct = "@nanameowbanana"
 
 # Setup Tweepy API Authentication
-auth = tweepy.OAuthHandler(api_key, api_secret)
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
