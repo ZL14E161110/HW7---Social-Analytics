@@ -117,15 +117,15 @@ while(True):
 ```
 
 
-![png](Sentiment_Analysis_for_BuzzFeedNews_032418.png)
+![png](Sentiment%20Analysis%20for%20BuzzFeedNews%20032418.png)
 
 
 
-![png](Sentiment_Analysis_for_FoxBusiness_032418.png)
+![png](Sentiment%20Analysis%20for%20FoxBusiness%20032418.png)
 
 
 
-![png]("Sentiment_Analysis_for_CNN_032418.png)
+![png](Sentiment%20Analysis%20for%20CNN%20032418.png)
 
 
     last tweet id is 977485662126403586
