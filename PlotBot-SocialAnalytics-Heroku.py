@@ -4,8 +4,8 @@ import json
 import numpy as np
 import pandas as pd
 import time
-import matplotlib.pyplot as plt
 matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
