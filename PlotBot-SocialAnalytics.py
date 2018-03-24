@@ -85,7 +85,7 @@ def tweetsentimentanalysis():
         #Incorporate the other graph properties
         T = time.strftime("%m%d%y")
         plt.title(f"Sentiment Analysis of Tweets {T} for @{target}")
-        plt.legend(title=f"@ {target} Tweets",bbox_to_anchor=(1.2, 0.5),loc=1,fontsize=10,frameon=True)
+        plt.legend(title=f"@ {target} Tweets",fontsize=10,frameon=True)
         plt.ylabel("Tweet Polarity")
         plt.xlabel("Tweets Ago")
         plt.ylim(-1,1)
@@ -97,10 +97,11 @@ def tweetsentimentanalysis():
         
         counter = counter + 1
     print(f"last tweet id is {max(lastid)}")
-    print(f"we split out {counter} times analysis this time")
+    print(f"we split out {counter} analysis this time")
 
 # Set timer to run every 5 minute
 while(True):
+    print("working again")
     tweetsentimentanalysis()
-    print(f"total count is {Total_Count}")
+    print("rest for 5 mins")
     time.sleep(300)
